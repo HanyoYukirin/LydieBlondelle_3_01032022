@@ -1,0 +1,265 @@
+/*
+INFORMATIONS :
+
+- Couleurs -> Primaire : Violet - #9356DC / Secondaire : Rose - #FF79DA / Tertiaire : Cyan - #99E2D0
+- Utilisation SASS
+- Footer identique sur toutes les pages (clic sur contact -> renvoi vers adresse mail)
+- Header sur toutes les pages (logo sur accueil, plus bouton de retour vers l'accueil sur pages de menu)
+- Bloc search et reserv : bordure grise : #CECECE, bloc search : #EAEAEA, bloc reserv: #F6F6F6
+
+
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap');
+
+* 
+{
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.container
+{
+    max-width: 1400px; 
+}
+
+a 
+{
+    text-decoration: none;
+    color: black;
+}
+
+.section__big-title
+{
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 40px 0 0 15px;
+}
+
+
+
+
+
+/* HEADER */
+
+
+.header__block
+{
+    text-align: center;
+}
+
+.header__block img
+{
+    width: 40%;
+    max-width: 285px; 
+    padding: 18px 0 8px 0;
+}
+
+/* SECTION */
+
+/* ASIDE 1 - LOCATION & RESERV */
+
+.location__block
+{
+    border-top: 2px solid #CECECE;
+    background: linear-gradient(#CECECE, 2px, #EAEAEA);
+    height: 40px;
+    text-align: center;
+}
+
+.location__block .location__city
+{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    font-weight: 500;
+    line-height: 40px;
+    width: 125px;
+    padding-left: 10px;
+}
+
+.reserv__block 
+{
+    background-color: #F6F6F6;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reserv__block p
+{
+    text-align: center;
+}
+
+.reserv__block h2 
+{
+    width: 250px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.reserv__block .reserv__explore-btn 
+{
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    height: 40px;
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 4px 4px 10px #B8B8B8;
+    margin-top: 30px;
+}
+
+.reserv__block .reserv__explore-btn a
+{
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+}
+
+.reserv__block .reserv__explore-btn:hover
+{
+    background: red;
+    box-shadow: 4px 4px 10px red;
+}
+
+
+/* ASIDE 2 - FUNCTIONING */
+
+
+.functioning__block
+{
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.functioning__block .functioning__steps
+{
+    background: #f6f6f6;
+    height: 50px;
+    width: 270px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px #B8B8B8;
+    margin-top: 25px;
+    position: relative;
+    line-height: 50px;
+}
+
+.functioning__block .functioning__steps .functioning__steps-nbr 
+{
+    position: absolute;
+    bottom: 15px;
+    left: -10px;
+    background-color: #9356DC;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: red;
+}
+
+.functioning__block .functioning__steps .fa-solid 
+{
+    position: absolute;
+    bottom: 17px;
+    left: 30px;
+}
+
+.functioning__steps:hover
+{
+    background: red;
+    box-shadow: 4px 4px 10px red;
+}
+
+.functioning__steps:hover .fa-solid 
+{
+    color: #9356DC;
+}
+
+
+/* ARTICLE - RESTAURANTS */
+
+
+.restaurants
+{
+    background-color: #F6F6F6;
+    height: 1000px; /*à ajuster*/
+    
+}
+
+.restaurants .restaurants__block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /*à reprendre*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.restaurants .restaurants__block .restaurants__cards
+{
+    box-shadow: 2px 2px 5px #B8B8B8;
+    border-radius: 15px;
+    width: 90%;
+    height: 220px;
+}
+
+.restaurants__cards-txt 
+{
+    /*à faire*/
+    background-color: aqua;
+}
+
+.restaurants img 
+{
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+}
+
+
+/* FOOTER */
+
+
+.footer__block
+{
+    background-color: #353535;
+    color: white;
+}
+
+.footer__block-font-title 
+{
+    font-family: 'Shrikhand', sans-serif;
+    color: white;
+    letter-spacing: 0.7px;
+}
+
+.footer__block ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__block a
+{
+    color: white;
+}
+
